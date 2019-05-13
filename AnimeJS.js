@@ -16,6 +16,10 @@ $(document).ready(function () {
             // easing jquery - example : easeInOutExpo,...
             easing: 'linear'
         },
+        // write function return & random one values
+        rotate: function() { 
+            return anime.random(-360, 360); 
+        },
         // round up the value to decimal
         round: 1,
         // easing jquery - example : easeInOutExpo,...
