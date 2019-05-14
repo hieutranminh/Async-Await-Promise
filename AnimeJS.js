@@ -37,4 +37,8 @@ $(document).ready(function () {
         // auto starts the animation true or false
         autoplay: true,
     });
+    //-----------CONTROL--------------
+    animation.play;
+    animation.pause;
+    animation.reverse;
 })
