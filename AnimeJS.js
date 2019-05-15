@@ -46,4 +46,8 @@ $(document).ready(function () {
     anime.get(domNode, 'width', 'rem');
     anime.set(targets, {property: value});
     anime.random(minValue, maxValue);
+    //----------CALLBACK--------------
+    update: function (anim) { anim.currentTime || anim.progress }
+    begin: function (anim) { anim.began }
+    complete: function (anim) { anim.completed }
 })
