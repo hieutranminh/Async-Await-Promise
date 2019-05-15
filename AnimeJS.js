@@ -41,4 +41,9 @@ $(document).ready(function () {
     animation.play;
     animation.pause;
     animation.reverse;
+    anime.remove(targets)
+    anime.get(target, propertyName, unit);
+    anime.get(domNode, 'width', 'rem');
+    anime.set(targets, {property: value});
+    anime.random(minValue, maxValue);
 })
