@@ -34,3 +34,10 @@
         echo 'Chua co bai viet nao het';
     }
 ?>
+  
+the_post_thumbnail('option')        // Ảnh đại diện
+the_title()                 // Tiêu đề 
+the_excerpt()               // Mô tả ngắn
+the_permalink()             // Đường dẫn
+the_author()                // Tác giả
+get_the_date()              // Ngày/tháng/năm
