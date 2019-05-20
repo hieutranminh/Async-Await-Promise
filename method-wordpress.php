@@ -1,5 +1,5 @@
 // gọi file đã tách trong index. ( header | footer )
-<?php get_header() ?>
+<?php get_header() 
 
 // gọi đường dẫn đến theme
 <?php echo get_template_directory_uri() ?>
@@ -41,3 +41,4 @@ the_excerpt()               // Mô tả ngắn
 the_permalink()             // Đường dẫn
 the_author()                // Tác giả
 get_the_date()              // Ngày/tháng/năm
+  ?>
