@@ -3,6 +3,10 @@
 
 // gọi đường dẫn đến theme
 <?php echo get_template_directory_uri() ?>
+<?php bloginfo('stylesheet_directory') ?>
+
+// gọi Menu trong WP
+<?php wp_nav_menu() ?>
 
 // ngôn ngữ trên thẻ <html>
 <?php language_attributes() ?>
