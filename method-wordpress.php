@@ -1,5 +1,5 @@
 // gọi file đã tách trong index. ( header | footer )
-<?php get_header() 
+<?php get_header() ?>
 
 // gọi đường dẫn đến theme
 <?php echo get_template_directory_uri() ?>
@@ -16,6 +16,22 @@
 // chứa các hàm , style , js ,... của Wordpress
 <?php wp_footer() ?>
   
+// Hàm cho phép theme hỗ trợ ảnh đại diện (functions.php)
+add_theme_support( 'post-thumbnails', array( 'post', 'page' ) );
+
+the_post_thumbnail('option')        // Ảnh đại diện
+the_title()                         // Tiêu đề 
+the_excerpt()                       // Mô tả ngắn
+the_permalink()                     // Đường dẫn
+the_author()                        // Tác giả
+get_the_date()                      // Ngày/tháng/năm
+  
+// set kích cỡ hình ảnh ( function.php )  
+add_image_size('blog-thumbnail',700, 350, true);
+set_post_thumbnail_size( 700, 350 );
+  
+-----------------------------LOOP--------------------------------  
+  
 // Loop data | Cach 1 : 
 <?php if ( have_posts() ) : ?>
   <?php while ( have_posts() ) : the_post(); ?>
@@ -27,7 +43,7 @@
 <?php
     if (have_posts()) {
         while (have_posts()) {
-            $post = the_post();
+            the_post();
             get_template_part( 'template-parts/content', get_post_format() );
         }
     } else {
@@ -35,10 +51,4 @@
     }
 ?>
   
-the_post_thumbnail('option')        // Ảnh đại diện
-the_title()                 // Tiêu đề 
-the_excerpt()               // Mô tả ngắn
-the_permalink()             // Đường dẫn
-the_author()                // Tác giả
-get_the_date()              // Ngày/tháng/năm
-  ?>
+
