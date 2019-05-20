@@ -15,3 +15,22 @@
   
 // chứa các hàm , style , js ,... của Wordpress
 <?php wp_footer() ?>
+  
+// Loop data | Cach 1 : 
+<?php if ( have_posts() ) : ?>
+  <?php while ( have_posts() ) : the_post(); ?>
+      <?php get_template_part( 'template-parts/content', get_post_format() ); ?>
+  <?php endwhile; ?>
+<?php endif; ?>
+  
+// Loop data | Cach 2 : 
+<?php
+    if (have_posts()) {
+        while (have_posts()) {
+            $post = the_post();
+            get_template_part( 'template-parts/content', get_post_format() );
+        }
+    } else {
+        echo 'Chua co bai viet nao het';
+    }
+?>
