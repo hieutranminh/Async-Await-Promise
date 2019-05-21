@@ -34,6 +34,12 @@ get_the_date()                      // Ngày/tháng/năm
 add_image_size('blog-thumbnail',700, 350, true);
 set_post_thumbnail_size( 700, 350 );
   
+// get các field được tạo ra bởi plugin ( Advanced Custom Fields ) 
+<?php $nameField = get_field('nameField') ?> 
+  
+// get một khối giao diện ( phải đặt tên file content-welcome )
+<?php get_template_part('template-parts/content','welcome') ?>
+  
 -----------------------------LOOP--------------------------------  
   
 // Loop data | Cach 1 : 
