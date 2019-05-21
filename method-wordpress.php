@@ -61,4 +61,13 @@ set_post_thumbnail_size( 700, 350 );
     }
 ?>
   
+-------------------------------PLUGINS---------------------------
+  
+  Advanced Custom Fields : Tạo các field cho page | post | ...
+  
+  Custom Post Type UI : Tạo ra các navigation trong dashboad như page | post
+  
+  Post Types Order : Kéo thả , sắp xếp ( sort ) trong page | post
+  
+  
 
