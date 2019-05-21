@@ -46,6 +46,9 @@ set_post_thumbnail_size( 700, 350 );
 // get các bài post ra
 <?php the_post(); ?>
   
+// reset vong lap
+<?php wp_reset_query(); ?>
+  
 -----------------------------LOOP--------------------------------  
   
 // Loop data | Cach 1 : 
