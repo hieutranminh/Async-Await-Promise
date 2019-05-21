@@ -40,6 +40,12 @@ set_post_thumbnail_size( 700, 350 );
 // get một khối giao diện ( phải đặt tên file content-welcome )
 <?php get_template_part('template-parts/content','welcome') ?>
   
+// check xem có bài post không
+<?php have_posts(); ?>
+  
+// get các bài post ra
+<?php the_post(); ?>
+  
 -----------------------------LOOP--------------------------------  
   
 // Loop data | Cach 1 : 
