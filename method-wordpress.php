@@ -48,6 +48,10 @@ set_post_thumbnail_size( 700, 350 );
   
 // reset vong lap
 <?php wp_reset_query(); ?>
+<?php wp_reset_postdata(); ?>
+  
+// get các danh mục của taxanomy
+<?php get_the_terms( $post -> ID , '$taxanomy') ?>
   
 -----------------------------LOOP--------------------------------  
   
@@ -70,7 +74,15 @@ set_post_thumbnail_size( 700, 350 );
     }
 ?>
   
--------------------------------PLUGINS---------------------------
+------------------------------LOGIC-----------------------------
+  
+// xử lý ngăn cách nhiều category khác nhau CACH 01
+<?php echo join(" | ", wp_list_pluck( $arrCategory, 'name')); ?>
+  
+// xử lý ngăn cách nhiều category khác nhau CACH 02
+<?php echo join(" | ",array_column($arrCategory, 'name')); ?>
+  
+  -------------------------------PLUGINS---------------------------
   
   Advanced Custom Fields : Tạo các field cho page | post | ...
   
@@ -93,5 +105,6 @@ set_post_thumbnail_size( 700, 350 );
     <?php
     endforeach;
   ?>
+  
   
 
