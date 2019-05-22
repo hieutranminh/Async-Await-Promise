@@ -20,19 +20,26 @@
 // chứa các hàm , style , js ,... của Wordpress
 <?php wp_footer() ?>
   
-// Hàm cho phép theme hỗ trợ ảnh đại diện (functions.php)
-add_theme_support( 'post-thumbnails', array( 'post', 'page' ) );
-
-the_post_thumbnail('option')        // Ảnh đại diện
-the_title()                         // Tiêu đề 
-the_excerpt()                       // Mô tả ngắn
-the_permalink()                     // Đường dẫn
-the_author()                        // Tác giả
-get_the_date()                      // Ngày/tháng/năm
+// Ảnh đại diện - option gồm (full, large , medium , thumbnail)
+<?php the_post_thumbnail('option') ?>
   
-// set kích cỡ hình ảnh ( function.php )  
-add_image_size('blog-thumbnail',700, 350, true);
-set_post_thumbnail_size( 700, 350 );
+// Lấy URL của hình ảnh (truyền vào ID của hình ảnh & option : (full, large , medium , thumbnail)) & return mảng (array)
+<?php wp_get_attachment_image_src(get_post_thumbnail_id($post -> ID), 'option') ?>
+  
+// Tiêu đề 
+<?php the_title() ?>
+  
+// Mô tả ngắn
+<?php the_excerpt() ?>
+  
+// Đường dẫn
+<?php the_permalink() ?>
+  
+// Tác giả
+<?php the_author() ?> 
+  
+// Ngày/tháng/năm
+<?php get_the_date() ?>   
   
 // get các field được tạo ra bởi plugin ( Advanced Custom Fields ) 
 <?php $nameField = get_field('nameField') ?> 
@@ -52,6 +59,15 @@ set_post_thumbnail_size( 700, 350 );
   
 // get các danh mục của taxanomy
 <?php get_the_terms( $post -> ID , '$taxanomy') ?>
+  
+-----------------------------FUNCTION.php------------------------
+  
+// Hàm cho phép theme hỗ trợ ảnh đại diện (functions.php)
+add_theme_support( 'post-thumbnails', array( 'post', 'page' ) );
+  
+// set kích cỡ hình ảnh ( function.php )  
+add_image_size('blog-thumbnail',700, 350, true);
+set_post_thumbnail_size( 700, 350 );
   
 -----------------------------LOOP--------------------------------  
   
@@ -89,6 +105,11 @@ set_post_thumbnail_size( 700, 350 );
   Custom Post Type UI : Tạo ra các navigation trong dashboad như page | post
   
   Post Types Order : Kéo thả , sắp xếp ( sort ) trong page | post
+  
+  Post Thumbnail Editor : cắt ảnh , cắt tỉ lệ hình ảnh
+  
+  Hide Titke : ẩn title nhưng vẫn giữ lại thẻ H3 để đọc SEO
+  
   
   <?php
     $arg = array('post_type' => 'about_service');
