@@ -78,5 +78,20 @@ set_post_thumbnail_size( 700, 350 );
   
   Post Types Order : Kéo thả , sắp xếp ( sort ) trong page | post
   
+  <?php
+    $arg = array('post_type' => 'about_service');
+    $about_service = new WP_Query($arg);
+
+    $about_posts = $about_service->get_posts();
+    foreach ($about_posts as $item):
+      ?>
+        <div class="about_item" data-aos="" data-aos-easing="linear"
+             data-aos-duration="500">
+            <i class="<?=$item->post_title?>"></i>
+            <p><?=$item->post_content?></p>
+        </div>
+    <?php
+    endforeach;
+  ?>
   
 
