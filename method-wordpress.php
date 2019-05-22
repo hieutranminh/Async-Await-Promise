@@ -1,24 +1,25 @@
 // gọi file đã tách trong index. ( header | footer )
 <?php get_header() ?>
+<?php get_footer() ?>
 
-// gọi đường dẫn đến theme
+// chứa các hàm , style , js ,... của Wordpress ( để trong <head> )
+<?php wp_head() ?>
+  
+// chứa các hàm , style , js ,... của Wordpress ( để trên các file script & </body> )
+<?php wp_footer() ?>
+
+// ngôn ngữ trên thẻ <html>
+<?php language_attributes() ?>
+    
+// tiêu đề title trong head
+<?php bloginfo('name') ?>
+  
+// gọi đường dẫn đến các link ( css | script )
 <?php echo get_template_directory_uri() ?>
 <?php bloginfo('stylesheet_directory') ?>
 
 // gọi Menu trong WP
 <?php wp_nav_menu() ?>
-
-// ngôn ngữ trên thẻ <html>
-<?php language_attributes() ?>
-  
-// tiêu đề title trong head
-<?php bloginfo('name') ?>
-  
-// chứa các hàm , style , js ,... của Wordpress
-<?php wp_head() ?>
-  
-// chứa các hàm , style , js ,... của Wordpress
-<?php wp_footer() ?>
   
 // Ảnh đại diện - option gồm (full, large , medium , thumbnail)
 <?php the_post_thumbnail('option') ?>
