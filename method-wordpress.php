@@ -61,6 +61,9 @@
 // get các danh mục của taxanomy
 <?php get_the_terms( $post -> ID , '$taxanomy') ?>
   
+// Đếm số lượng của 1 loại bài post (có thể -> publish để lấy ra những bài publish)  
+<?php wp_count_posts('post');?>
+  
 -----------------------------FUNCTION.php------------------------
   
 // Hàm cho phép theme hỗ trợ ảnh đại diện (functions.php)
