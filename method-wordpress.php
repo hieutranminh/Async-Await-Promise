@@ -54,12 +54,16 @@
   
 // Lấy URL của hình ảnh (truyền vào ID của hình ảnh & option : (full, large , medium , thumbnail)) & return mảng (array)
 <?php wp_get_attachment_image_src(get_post_thumbnail_id($post -> ID), 'option') ?>
-  
+
+------------------------ Chỉ sử dụng trong vòng lập (LOOP)---------------------
 // Tiêu đề 
 <?php the_title() ?>
   
 // Mô tả ngắn
 <?php the_excerpt() ?>
+
+// Tiêu đề 
+<?php the_content() ?>
   
 // Đường dẫn
 <?php the_permalink() ?>
@@ -69,6 +73,8 @@
   
 // Ngày/tháng/năm
 <?php echo get_the_date('format') ?>   
+  
+-------------------------------------------------------------------------------
   
 // get các field được tạo ra bởi plugin ( Advanced Custom Fields ) 
 <?php $nameField = get_field('nameField') ?> 
