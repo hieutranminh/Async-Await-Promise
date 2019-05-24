@@ -40,7 +40,7 @@
 <?php the_author() ?> 
   
 // Ngày/tháng/năm
-<?php get_the_date() ?>   
+<?php echo get_the_date('format') ?>   
   
 // get các field được tạo ra bởi plugin ( Advanced Custom Fields ) 
 <?php $nameField = get_field('nameField') ?> 
@@ -58,11 +58,19 @@
 <?php wp_reset_query(); ?>
 <?php wp_reset_postdata(); ?>
   
-// get các danh mục của taxanomy
+// get các danh mục (category được tạo ra từ CPT UI) của taxanomy
 <?php get_the_terms( $post -> ID , '$taxanomy') ?>
   
 // Đếm số lượng của 1 loại bài post (có thể -> publish để lấy ra những bài publish)  
 <?php wp_count_posts('post');?>
+  
+// Phân trang pagination 
+<?php the_posts_pagination( array(
+  'mid_size' => 2,
+  'prev_text' => __( '&laquo;', 'textdomain' ),
+  'next_text' => __( '&raquo;', 'textdomain' ),
+)); ?>
+  
   
 -----------------------------FUNCTION.php------------------------
   
@@ -116,7 +124,10 @@ set_post_thumbnail_size( 700, 350 );
   
   
   <?php
-    $arg = array('post_type' => 'about_service');
+  $arg = array(
+    'post_type' => 'portfolio_product',
+    'posts_per_page'=> 6,
+  );
     $about_service = new WP_Query($arg);
 
     $about_posts = $about_service->get_posts();
