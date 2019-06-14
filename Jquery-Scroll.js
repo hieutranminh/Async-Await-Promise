@@ -20,3 +20,22 @@ $(document).on('click touchend', '.home__category span', function (e) {
     }, 100)
   }
 })
+
+// Scroll Gumikevietnam ----------------------------
+$(document).on('scroll', function () {
+      var currentOffset = $('#workshops').offset().top;
+
+      $('.nav-list li a').each(function () {
+        var currentLinkOffset = $(this).offset().top;
+
+        if (currentLinkOffset >= currentOffset) {
+          if (!$(this).hasClass('change-color')) {
+            $(this).addClass('change-color');
+          }
+        } else {
+          if ($(this).hasClass('change-color')) {
+            $(this).removeClass('change-color');
+          }
+        }
+      });
+    });
