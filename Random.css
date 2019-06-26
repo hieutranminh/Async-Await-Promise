@@ -1,143 +1,20 @@
-
-#header {
-  .navbar-header {
-    padding: 9px 0px;
-  }
-  .navbar-nav {
-    li {
-      margin-left: 40px;
-      list-style: none;
-      a {
-        position: relative;
-        text-transform: uppercase;
-        font-weight: bold;
-        color: #333333;
-        padding: 24px 0px;
-        display: inline-block;
-        @include transition(all 0.2s);
-        &:hover {
-          color: #da251d;
-          background: transparent;
-          &:after {
-            opacity: 1;
-          }
-        }
-        &:after {
-          content: '';
-          position: absolute;
-          left: 50%;
-          bottom: 0px;
-          width: 30px;
-          height: 5px;
-          margin-left: -15px;
-          background: #da251d;
-          opacity: 0;
-          @include transition(all 0.2s);
-        }
-      }
-      //LI Class Active
-      &.active {
-        a {
-          color: #da251d;
-          &:after {
-            opacity: 1;
-          }
-        }
-      }
-      //LI Class Language
-      &.language {
-        position: relative;
-        padding: 21px 20px;
-        &:before{
-          content: '';
-          position: absolute;
-          top: 50%;
-          left: 0px;
-          width: 1px;
-          height: 30px;
-          margin-top: -15px;
-          background: #333333;
-        }
-        &:after{
-          content: '';
-          position: absolute;
-          top: 50%;
-          right: 0px;
-          width: 1px;
-          height: 30px;
-          margin-top: -15px;
-          background: #333333;
-        }
-        .fa-globe {
-          padding-right: 2px;
-          font-size: 14px;
-        }
-        a {
-          margin: 0;
-          padding: 0;
-          color: #b7b7b7;
-          &:after {
-            content: none;
-          }
-          &.active {
-            color: #333333;
-            border-bottom: 2px solid;
-          }
-        }
-      }
-      //LI Class Search
-      &.search {
-        padding: 9px 0px;
-        .fa-search {
-          width: 50px;
-          height: 50px;
-          text-align: center;
-          line-height: 50px;
-          border: 1px solid;
-          cursor: pointer;
-          @include border-radius(50%);
-        }
+document.addEventListener('DOMContentLoaded', function () {
+  var listCate = document.getElementsByClassName('cate');
+  function onMouseOver () {
+    for(var i=0; i<listCate.length; i++) {
+      listCate[i].onmouseover = function () {
+        resetActive();
+        this.classList.add('active');
       }
     }
   }
-}
-
-
-<!--Header-->
-<header id="header">
-  <!--Navigation-->
-  <nav class="navbar">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">
-          <img src="./assets/img/logo.png" alt="logo">
-        </a>
-      </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li class="active"><a href="#">Post</a></li>
-          <li><a href="#">Contact</a></li>
-          <li class="language">
-            <i class="fas fa-globe"></i>
-            <a href="#" class="active">VN </a>
-            <a href="#">/ EN</a>
-          </li>
-          <li class="search">
-            <i class="fas fa-search"></i>
-          </li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-</header>
+  function resetActive () {
+    for(var i=0; i<listCate.length; i++) {
+      listCate[i].classList.remove('active');
+    }
+  }
+  function init () {
+    onMouseOver();
+  }
+  init();
+})
