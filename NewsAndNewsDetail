@@ -6,8 +6,8 @@
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-item"><a href="#">Who we are</a></li>
-        <li class="breadcrumb-item"><a href="#">Contact us</a></li>
+        <li class="breadcrumb-item"><a href="#">Investors relations</a></li>
+        <li class="breadcrumb-item"><a href="#">News</a></li>
       </ol>
     </nav>
     <div class="row">
