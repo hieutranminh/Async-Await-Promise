@@ -234,7 +234,7 @@
 .side-bar {
   h3 {
     position: relative;
-    font-size: 27px;
+    font-size: 18px;
     font-weight: 900;
     margin: 12px 0px 36px;
     padding-bottom: 24px;
@@ -278,3 +278,150 @@
     }
   }
 }
+--------------------------------NEWS DETAIL--------------------------------
+<section class="news-detail">
+  <div class="container-custom">
+    <!--BREADCRUMB-->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Investors relations</a></li>
+        <li class="breadcrumb-item"><a href="#">News</a></li>
+        <li class="breadcrumb-item"><a href="#">Công ty quản lý quỹ Dai-ichi Life Việt Nam ra mắt quỹ mở</a></li>
+      </ol>
+    </nav>
+    <div class="row">
+      <!--CONTENT-->
+      <div class="col-xl-8">
+        <div class="content">
+          <h3>Công ty quản lý quỹ Dai-ichi Life Việt Nam ra mắt quỹ mở</h3>
+          <div class="box">
+            <div class="date">
+              <span>June 6, 2019</span>
+            </div>
+            <div class="share">
+              <p>Share</p>
+              <ul>
+                <li>
+                  <a href="#"><img src="../assets/images/social-01.png" alt="social"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="../assets/images/social-02.png" alt="social"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="../assets/images/social-03.png" alt="social"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="../assets/images/social-04.png" alt="social"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p class="des">Ngày 10.1.2019, Công ty TNHH MTV Quản lý Quỹ Dai-ichi Life Việt Nam  (DFVN), công ty thành viên 100% vốn sở hữu của Công ty Bảo hiểm nhân thọ Dai-ichi Việt Nam, thuộc Tập đoàn Dai-ichi Holdings Inc. của Nhật Bản đã ra mắt Quỹ mở Quỹ đầu tư tăng trưởng DFVN (DFVN-CAF), với vốn điều lệ ban đầu là 75.121.600.000 đồng.</p>
+          <div class="content-editor">
+            <img src="../assets/images/news-detail.jpg" alt="detail">
+            <p>*Đầu tư vào các cổ phiếu niêm yết* <br>
+              Quỹ DFVN-CAF là Quỹ mở đầu tiên do DFVN thành lập và quản lý, là giải pháp tài chính đáp ứng nhu cầu đầu tư đa dạng của nhiều phân khúc khách hàng khác nhau. Với đội ngũ chuyên gia đầu tư chuyên nghiệp, giàu kinh nghiệm thị trường và tận tâm, DFVN hiện đang quản lý đầu tư các Quỹ bảo hiểm nhân thọ cho khách hàng của Công ty TNHH Bảo hiểm Nhân thọ Dai-ichi Việt Nam (Dai-ichi Life Việt Nam) với tổng tài sản quản lý hơn 17.000 tỉ đồng tính đến tháng 11.2018.</p>
+            <p>Quỹ DFVN-CAF sẽ đầu tư chủ yếu vào cổ phiếu niêm yết trên thị trường chứng khoán Việt Nam có chỉ số phân tích cơ bản tốt, có tiềm năng tăng trưởng cao và quản trị công ty vững mạnh. Quỹ lấy chỉ số VN-Index làm chỉ số chứng khoán tham chiếu để đánh giá hiệu quả hoạt động, mục tiêu là mang lại hiệu quả đầu tư tốt hơn chỉ số tham chiếu này. </p>
+            <p>Ông Trần Châu Danh, Tổng giám đốc, kiêm Giám đốc Điều hành về đầu tư của DFVN, Thành viên Hội đồng Thành viên DFVN nhận định: “Tính đến ngày 30.11.2018, cả nước chỉ mới có 24 Quỹ mở, quy mô tổng tài sản khoảng 13.378 tỉ đồng với khoảng 30.000 tài khoản nhà đầu tư; những con số quá khiêm tốn so với quy mô dân số và nền kinh tế của Việt Nam cũng như so với các quốc gia trong khu vực. Do đó, tiềm năng thị trường là rất lớn, nếu chúng ta có phương pháp tiếp cận khách hàng phù hợp và mang lại cho họ các giải pháp đầu tư hiệu quả. Trong vài năm trở lại đây, một số công ty quản lý Quỹ với những nỗ lực và đầu tư phát triển hệ thống hợp lý đã mang lại giá trị và kết quả đầu tư rất đáng ghi nhận cho khách hàng của họ. Vì vậy, khi tham gia thị trường, chúng tôi sẽ cùng nhau tiếp tục phục vụ khách hàng tốt hơn nữa và góp phần xây dựng ngành quản lý Quỹ của Việt Nam phát triển lành mạnh, bền vững. Theo đó, chúng tôi tập trung vào các giá trị tốt nhất mang lại cho nhà đầu tư, đó là hiệu quả đầu tư tối ưu và bền vững trong dài hạn; là chất lượng dịch vụ khách hàng không ngừng được hoàn thiện”. </p>
+            <p>*Đầu tư tối thiểu 1 triệu đồng/lệnh mua* <br>
+              Ông Takashi Fujii, Chủ tịch Hội đồng Thành viên Dai-ichi Life International khu vực châu Á-Thái Bình Dương kiêm Chủ tịch Hội đồng Thành viên Dai-ichi Life Việt Nam và Hội đồng Thành viên của DFVN, chia sẻ: “Chỉ sau 12 năm hoạt động, Dai-ichi Life Việt Nam, công ty mẹ của DFVN, đã tăng trưởng hơn 20 lần về tổng doanh thu phí bảo hiểm, xây dựng nền tảng vững chắc và giữ vững vị thế là một trong bốn công ty bảo hiểm nhân thọ hàng đầu tại Việt Nam. Trong hành trình phát triển đó, DFVN có vai trò rất quan trọng trong việc quản lý và đầu tư sinh lợi tài sản của khách hàng tham gia các giải pháp BHNT của công ty. Sự ra đời của Quỹ DFVN-CAF sẽ cung cấp cho khách hàng thêm một lựa chọn giải pháp đầu tư tài chính tiên tiến, chất lượng Nhật Bản nhằm giúp khách hàng tích lũy, gia tăng giá trị tài sản một cách hiệu quả, lâu dài và bền vững để có thể tận hưởng cuộc sống an nhàn theo phong cách mình mong muốn”.</p>
+            <p>“DFVN sẽ không ngừng nỗ lực trong các hoạt động truyền thông, hướng dẫn, tiếp cận khách hàng nhằm góp phần thay đổi nhận thức và thói quen của khách hàng đầu tư thông qua Quỹ mở. Bằng cách đó, chúng tôi tin tưởng rằng Quỹ mở sẽ trở nên phổ biến hơn, dần dần trở thành một trong những công cụ đầu tư tài chính thiết yếu đối với mọi người dân khi có nhu cầu. Chúng tôi mong muốn ngày càng có nhiều cá nhân và gia đình ở Việt Nam biết đến và tham gia đầu tư thông qua các quỹ của chúng tôi trong những năm sắp tới”, ông Trần Châu Danh, cho biết thêm. Dự kiến, nhà đầu tư có thể bắt đầu giao dịch chứng chỉ Quỹ DFVN-CAF từ ngày 29.1.2019, định kỳ vào thứ ba hằng tuần. Số tiền đầu tư tối thiểu là </p>
+          </div>
+        </div>
+      </div>
+      <!--SIDEBAR-->
+      <div class="col-xl-4">
+        <div class="side-bar">
+          <h3>Related News</h3>
+          <div class="side-bar-content">
+            <div class="item">
+              <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a>
+              <span>June 6, 2019</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+            </div>
+            <div class="item">
+              <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a>
+              <span>June 6, 2019</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+            </div>
+            <div class="item">
+              <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a>
+              <span>June 6, 2019</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+            </div>
+            <div class="item">
+              <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a>
+              <span>June 6, 2019</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+            </div>
+            <div class="item">
+              <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a>
+              <span>June 6, 2019</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+------------------------------------------SCSS DETAIL----------------------------------
+.news-detail {
+  margin: 130px 0px 50px;
+  @media #{$info-phone} {
+    margin: 90px 0px 50px;
+  }
+  .content {
+    padding-right: 30px;
+    @media #{$info-tablet-horizontal} {
+      padding: 0px;
+    }
+    h3 {
+      position: relative;
+      font-size: 27px;
+      font-weight: 900;
+      margin: 12px 0px 10px;
+      padding-bottom: 14px;
+    }
+    .box {
+      @include flex;
+      justify-content: space-between;
+      align-items: center;
+      span {
+        display: block;
+        font-size: 14px;
+        color: #212121;
+        font-weight: bold;
+      }
+      .share {
+        @include flex;
+        align-items: center;
+        p {
+          font-size: 14px;
+          color: #212121;
+          margin-right: 10px;
+        }
+        ul {
+          line-height: 1;
+          li {
+            display: inline-block;
+            margin-left: 7px;
+            a {
+              img {
+                width: 20px;
+                height: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .des {
+      font-size: 15px;
+      color: #3e3e3e;
+      margin: 25px 0px;
+    }
+  }
+}
+
