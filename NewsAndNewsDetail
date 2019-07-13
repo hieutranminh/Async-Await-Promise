@@ -1,1 +1,280 @@
 
+<!--NEWS-->
+<section class="news">
+  <div class="container-custom">
+    <!--BREADCRUMB-->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Who we are</a></li>
+        <li class="breadcrumb-item"><a href="#">Contact us</a></li>
+      </ol>
+    </nav>
+    <div class="row">
+      <!--CONTENT-->
+      <div class="col-xl-8">
+        <div class="content">
+          <h3>Highlights</h3>
+          <!--New hot-->
+          <div class="hot-new">
+            <div class="item-image">
+              <img src="../assets/images/news-01.jpg" alt="new">
+            </div>
+            <div class="item-content">
+              <a href="#" class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </a>
+              <span>June 6, 2019</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
+              <a href="#" class="btn-readmore">Read more</a>
+            </div>
+          </div>
+          <!--New -->
+          <div class="other-new row">
+            <div class="col-sm-4">
+              <div class="item">
+                <img src="../assets/images/news-02.jpg" alt="new">
+                <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius</a>
+                <span>June 6, 2019</span>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="item">
+                <img src="../assets/images/news-03.jpg" alt="new">
+                <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius</a>
+                <span>June 6, 2019</span>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="item">
+                <img src="../assets/images/news-04.jpg" alt="new">
+                <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius</a>
+                <span>June 6, 2019</span>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="item">
+                <img src="../assets/images/news-05.jpg" alt="new">
+                <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius</a>
+                <span>June 6, 2019</span>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="item">
+                <img src="../assets/images/news-06.jpg" alt="new">
+                <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius</a>
+                <span>June 6, 2019</span>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="item">
+                <img src="../assets/images/news-07.jpg" alt="new">
+                <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius</a>
+                <span>June 6, 2019</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--SIDEBAR-->
+      <div class="col-xl-4">
+        <div class="side-bar">
+          <h3>Latest News</h3>
+          <div class="side-bar-content">
+            <div class="item">
+              <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a>
+              <span>June 6, 2019</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+            </div>
+            <div class="item">
+              <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a>
+              <span>June 6, 2019</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+            </div>
+            <div class="item">
+              <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a>
+              <span>June 6, 2019</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+            </div>
+            <div class="item">
+              <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a>
+              <span>June 6, 2019</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+            </div>
+            <div class="item">
+              <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a>
+              <span>June 6, 2019</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+-----------------------SCSS-------------------------------
+.news {
+  margin: 130px 0px 50px;
+  @media #{$info-phone} {
+    margin: 90px 0px 50px;
+  }
+  .content {
+    h3 {
+      position: relative;
+      font-size: 27px;
+      font-weight: 900;
+      margin: 12px 0px 36px;
+      padding-bottom: 14px;
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 1px;
+        background: #acacac;
+      }
+    }
+    span {
+      display: block;
+      font-size: 14px;
+      color: #212121;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+  }
+  .hot-new {
+    @include flex;
+    align-items: center;
+    margin-bottom: 40px;
+    @media #{$info-phone} {
+      flex-direction: column;
+    }
+    .item-image {
+      width: 50%;
+      height: 245px;
+      @media #{$info-phone} {
+        width: 100%;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .item-content {
+      width: 50%;
+      padding: 0px 20px;
+      @media #{$info-phone} {
+        width: 100%;
+        padding: 20px 0px;
+      }
+      .title {
+        display: block;
+        color: #8a7864;
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 24px;
+        margin-bottom: 12px;
+        @include transition(all 0.2s);
+        @media #{$info-phone} {
+          font-size: 18px;
+        }
+        &:hover {
+          color: #a5927c;
+        }
+      }
+      p {
+        font-size: 14px;
+        color: #818080;
+        line-height: 18px;
+        margin-bottom: 14px;
+      }
+      .btn-readmore {
+        display: inline-block;
+        font-size: 14px;
+        color: #212121;
+        font-weight: bold;
+        border: 1px solid #212121;
+        padding: 3px 10px;
+        @include transition(all 0.2s);
+        &:hover {
+          background-color: #8a7864;
+          color: #ffffff;
+          border: 1px solid #8a7864;
+        }
+      }
+    }
+  }
+  .other-new {
+    .item {
+      margin-bottom: 28px;
+      img {
+        height: 150px;
+        width: 100%;
+        object-fit: cover;
+        @media #{$info-phone} {
+          height: 200px;
+        }
+      }
+      a {
+        display: block;
+        font-size: 18px;
+        font-weight: bold;
+        color: #8a7864;
+        line-height: 21px;
+        margin: 20px 0px 12px;
+        @include transition(all 0.2s);
+        &:hover {
+          color: #a5927c;
+        }
+      }
+    }
+  }
+}
+----------------------------------SIDEBAR SCSS----------------------------
+.side-bar {
+  h3 {
+    position: relative;
+    font-size: 27px;
+    font-weight: 900;
+    margin: 12px 0px 36px;
+    padding-bottom: 14px;
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      width: 100%;
+      height: 1px;
+      background: #acacac;
+    }
+  }
+  &-content {
+    .item {
+      margin-bottom: 34px;
+      a {
+        display: block;
+        font-size: 18px;
+        font-weight: bold;
+        color: #8a7864;
+        line-height: 21px;
+        margin: 20px 0px 12px;
+        @include transition(all 0.2s);
+        &:hover {
+          color: #a5927c;
+        }
+      }
+      span {
+        display: block;
+        font-size: 14px;
+        color: #212121;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+      p {
+        color: #212121;
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+  }
+}
